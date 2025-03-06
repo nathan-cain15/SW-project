@@ -8,6 +8,16 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.03.06]
+
+### Added
+
+- Designed kernel and enhanced interfaces for Game of Life component
+
+### Updated
+
+- Changed design to include counting the number of alive cells
+
 ## [2024.12.30]
 
 - Added table-based rubrics to all 6 parts of the project
