@@ -30,4 +30,11 @@ public interface GameOfLifeKernal extends Standard<GameOfLife> {
      */
     void flipCellState(int col, int row);
 
+    boolean cellState(int col, int row);
+
+    int numberOfColumns();
+
+    int numberOfRows();
+
+
 }

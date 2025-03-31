@@ -8,6 +8,17 @@ the following form: YYYY.0M.0D.
 
 ## [Unreleased]
 
+## [2025.03.31]
+
+### Added
+
+- Designed abstract class for GameOfLife component
+
+### Updated
+
+- Changed design to include 3 new methods: cellState(int col, int row), numberOfColumns() and numberOfRows();
+
+
 ## [2025.03.06]
 
 ### Added
