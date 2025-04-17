@@ -1,7 +1,11 @@
+/**
+ * This abstract method implements the kernal methods in Game of Life, as well
+ * as the Standard methods.
+ */
 public abstract class GameOfLifeSecondary implements GameOfLife {
 
     @Override
-    public String toString() {
+    public final String toString() {
         String s = "{ ";
 
         for (int i = 0; i < this.numberOfRows(); i++) {
@@ -22,7 +26,14 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
 
     }
 
-    public boolean equals(GameOfLife g) {
+    /**
+     * Determines wether the value of {@this} and {@g} are equal.
+     *
+     * @param g
+     *            The other GameOfLife object to which is being compared
+     * @return Whether the value of {@this} and {@g} are the same or not
+     */
+    public final boolean equals(GameOfLife g) {
         boolean value = true;
 
         if (this.numberOfColumns() == g.numberOfColumns()
@@ -45,14 +56,14 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
     }
 
     @Override
-    public void next10Steps() {
+    public final void next10Steps() {
         for (int i = 0; i < 9; i++) {
             this.nextStep();
         }
     }
 
     @Override
-    public int numberOfAliveCells() {
+    public final int numberOfAliveCells() {
         int aliveCells = 0;
         for (int i = 0; i < this.numberOfRows(); i++) {
             for (int j = 0; j < this.numberOfColumns(); j++) {
@@ -66,7 +77,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
     }
 
     @Override
-    public void randomizeGrid() {
+    public final void randomizeGrid() {
         for (int i = 0; i < this.numberOfRows(); i++) {
             for (int j = 0; j < this.numberOfColumns(); j++) {
                 double random = Math.random();
@@ -78,7 +89,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
     }
 
     @Override
-    public void printGrid() {
+    public final void printGrid() {
         for (int i = 0; i < this.numberOfRows(); i++) {
             for (int j = 0; j < this.numberOfColumns(); j++) {
                 char state = this.cellState(i, j) ? '#' : '-';
