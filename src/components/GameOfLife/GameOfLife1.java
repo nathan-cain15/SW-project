@@ -1,3 +1,5 @@
+package components.GameOfLife;
+
 import java.util.ArrayList;
 
 /**
@@ -70,7 +72,7 @@ public class GameOfLife1 extends GameOfLifeSecondary {
     private void createNewRep(int c, int r) {
         this.cols = c;
         this.rows = r;
-        this.grid = new boolean[this.cols][this.rows];
+        this.grid = new boolean[c][r];
     }
 
     /**
@@ -81,7 +83,7 @@ public class GameOfLife1 extends GameOfLifeSecondary {
      * @param rows
      *            The number or rows in the grid.
      */
-    GameOfLife1(int cols, int rows) {
+    public GameOfLife1(int cols, int rows) {
         this.createNewRep(cols, rows);
 
     }
@@ -97,20 +99,6 @@ public class GameOfLife1 extends GameOfLifeSecondary {
     public final GameOfLife newInstance() {
         return new GameOfLife1(this.cols, this.rows);
 
-    }
-
-    /**
-     * Creates a new GameOfLife1 instance with the inputed number of columns and
-     * rows.
-     *
-     * @param cols
-     *            The number of columns in the grid.
-     * @param rows
-     *            The number or rows in the grid.
-     * @return The new GameOfLife1 instance.
-     */
-    public final GameOfLife newInstance(int cols, int rows) {
-        return new GameOfLife1(cols, rows);
     }
 
     @Override

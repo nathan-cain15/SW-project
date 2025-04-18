@@ -1,3 +1,5 @@
+package components.GameOfLife;
+
 import components.standard.Standard;
 
 /**
