@@ -1,3 +1,5 @@
+package components.GameOfLife;
+
 /**
  * {@code GameOfLife} enhanced with secondary methods.
  */

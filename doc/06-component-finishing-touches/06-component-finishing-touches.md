@@ -305,18 +305,18 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+This project definitely did help me better understand some aspects of the OSU Software discipline, as I didn't really understand abstract classes before doing this project. Along with that this project drives home the important of testing when you have such a large project where you are bound to make errors.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+I'm not sure, but I think it is good practice, and helps understanding how different classes and interfaces work with each other, and are built into a package.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+I don't think my perspective has changed too much, I still really enjoy it since I love thinking of an idea and being able to complete it.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -324,29 +324,29 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I think being able to better debug, since I had some fustrations with Junit not working, and I have realized different ways those issues can occur.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+/b comprehensive testing with JUnit
+/b built a full java package
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I don't think it has affected it too much. Working with the Game Of Life definitely makes me more appreciative of it, and I still do enjoy software development. I hope to look into the science of complexity in the future as I find it super fascinating.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+I could always learn. I think I need to have a base level of keeping in the know of technology and science. I can search for topics that interest me and always learn the applications of what I learn in school. I should also gain skills through extracurriculars. I should also learn new technologies and topics by building projects. Finding mentors is something I have to work on, but I don't have a general focus yet.
 
 ### Changelog
 
-<!-- TODO: update CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -382,7 +382,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull

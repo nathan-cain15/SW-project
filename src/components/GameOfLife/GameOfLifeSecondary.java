@@ -1,3 +1,5 @@
+package components.GameOfLife;
+
 /**
  * This abstract method implements the kernal methods in Game of Life, as well
  * as the Standard methods.
@@ -11,7 +13,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
         for (int i = 0; i < this.numberOfRows(); i++) {
             s = s + "{ ";
             for (int j = 0; j < this.numberOfColumns(); j++) {
-                if (this.cellState(i, j)) {
+                if (this.cellState(j, i)) {
                     s = s + "1, ";
                 } else {
                     s = s + "0, ";
@@ -41,7 +43,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
                 && this.numberOfAliveCells() == g.numberOfAliveCells()) {
             for (int i = 0; i < this.numberOfRows(); i++) {
                 for (int j = 0; j < this.numberOfColumns(); j++) {
-                    if (this.cellState(i, j) != g.cellState(i, j)) {
+                    if (this.cellState(j, i) != g.cellState(j, i)) {
                         value = false;
 
                         break;
@@ -67,7 +69,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
         int aliveCells = 0;
         for (int i = 0; i < this.numberOfRows(); i++) {
             for (int j = 0; j < this.numberOfColumns(); j++) {
-                if (this.cellState(i, j)) {
+                if (this.cellState(j, i)) {
                     aliveCells++;
                 }
             }
@@ -82,7 +84,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
             for (int j = 0; j < this.numberOfColumns(); j++) {
                 double random = Math.random();
                 if (random > 0.5) {
-                    this.flipCellState(i, j);
+                    this.flipCellState(j, i);
                 }
             }
         }
@@ -92,7 +94,7 @@ public abstract class GameOfLifeSecondary implements GameOfLife {
     public final void printGrid() {
         for (int i = 0; i < this.numberOfRows(); i++) {
             for (int j = 0; j < this.numberOfColumns(); j++) {
-                char state = this.cellState(i, j) ? '#' : '-';
+                char state = this.cellState(j, i) ? '#' : '-';
                 System.out.print(state + " ");
             }
             System.out.println();

@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
+## 2025.4.18
+
+### Added
+
+- Designed test suite for GameOfLife component
+- Designed two different use cases for GameOfLife component
+
 ## 2025.04.09
 
 ### Added
